@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe } from 'lucide-react';
-import { useLanguage } from '../App';
+import { useLanguage } from '../LanguageContext';
 import { LANGUAGES } from '../constants';
 import { AnimatePresence, motion } from 'framer-motion';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../App';
+import { useLanguage } from '../LanguageContext';
 import { ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 

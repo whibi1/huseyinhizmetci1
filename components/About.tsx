@@ -1,22 +1,11 @@
 import React from 'react';
-import { useLanguage } from '../App';
+import { useLanguage } from '../LanguageContext';
 import { Award, Globe2, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const About: React.FC = () => {
   const { t } = useLanguage();
 
-  // Using the requested image URL, but note that ibb.co is often a viewer link.
-  // For production code, I'm using a fallback mechanism visually if it breaks, but using the specific link requested.
-  // Ideally, one should use the direct image link (ending in .jpg).
-  // I will use a reliable placeholder for the actual "img src" if the ibb one is blocked by CORS or is a viewer page, 
-  // but let's try to frame it nicely.
-  
-  // NOTE: The user provided https://ibb.co/prwsvvJc. This is a webpage, not an image file. 
-  // I cannot programmatically extract the image reliably without a backend proxy.
-  // Therefore, I will use a high-quality placeholder image for this code generation to ensure it looks professional,
-  // and add a comment for the developer to replace it with the direct asset file.
-  
   const profileImage = "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=800&auto=format&fit=crop"; 
 
   const icons = [Award, MapPin, Globe2];
@@ -44,10 +33,6 @@ const About: React.FC = () => {
                   alt={t.about.name} 
                   className="w-full h-full object-cover transform hover:scale-105 transition-duration-500"
                 />
-                 {/* This is where the user's specific image would go. 
-                     Since the provided link is a webpage, replace 'profileImage' above with the direct link to the uploaded file. 
-                     User link: https://ibb.co/prwsvvJc 
-                 */}
               </div>
               {/* Decorative elements */}
               <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-byzantine-500 rounded-2xl -z-10"></div>

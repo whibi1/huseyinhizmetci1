@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLanguage } from '../App';
+import { useLanguage } from '../LanguageContext';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 

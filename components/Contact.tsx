@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../App';
+import { useLanguage } from '../LanguageContext';
 import { Phone, Instagram, Send } from 'lucide-react';
 import { CONTACT_INFO } from '../constants';
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLanguage } from '../App';
+import { useLanguage } from '../LanguageContext';
 import { Star, Quote } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
